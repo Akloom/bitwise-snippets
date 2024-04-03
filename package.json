@@ -4,7 +4,7 @@
   "description": "Snippets for HTML",
   "publisher": "Akloom",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/Akloom/bitwise-snippets",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.87.0"
