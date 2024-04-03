@@ -1,11 +1,11 @@
 {
   "name": "bitwise-snippets",
   "displayName": "BitWise Snippets",
-  "description": "Snippets for HTML",
+  "description": "Snippets for HTML/CSS/SASS/SCSS",
   "publisher": "Akloom",
   "license": "MIT",
   "repository": "https://github.com/Akloom/bitwise-snippets",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "engines": {
     "vscode": "^1.87.0"
   },

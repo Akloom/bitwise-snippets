@@ -17,3 +17,7 @@ Release fix Style Snippets
 ### 0.0.4
 
 Release fix 2.0 Style Snippets
+
+### 0.0.5
+
+Release fix 3.0 Style Snippets
