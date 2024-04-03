@@ -1,6 +1,6 @@
 {
   "Flex": {
-    "scope": "css,scss",
+    "scope": "'css','scss'",
     "prefix": [
       "bw-flex"
     ],
@@ -14,7 +14,7 @@
     "description": "Flex params"
   },
   "Grid": {
-    "scope": "css,scss",
+    "scope": "'css','scss'",
     "prefix": [
       "bw-grid"
     ],
@@ -27,7 +27,7 @@
     "description": "Grid params"
   },
   "Font": {
-    "scope": "css,scss",
+    "scope": "'css','scss'",
     "prefix": [
       "bw-font"
     ],
@@ -41,7 +41,7 @@
     "description": "Font params"
   },
   "Background image": {
-    "scope": "css,scss",
+    "scope": "'css','scss'",
     "prefix": [
       "bw-bg-image"
     ],
@@ -54,7 +54,7 @@
     "description": "Background image params"
   },
   "Border": {
-    "scope": "css,scss",
+    "scope": "'css','scss'",
     "prefix": [
       "bw-border"
     ],
@@ -66,7 +66,7 @@
     "description": "Border params"
   },
   "Button": {
-    "scope": "css,scss",
+    "scope": "'css','scss'",
     "prefix": [
       "bw-button"
     ],
@@ -83,7 +83,7 @@
     "description": "CSS button"
   },
   "Media screen": {
-    "scope": "css,scss",
+    "scope": "'css','scss'",
     "prefix": [
       "bw-media"
     ],

@@ -1,5 +1,3 @@
-# bitwise-snippets README
-
 Snippets for HTML/CSS/SASS/SCSS
 
 ## Release Notes
@@ -10,4 +8,12 @@ Release HTML Snippets
 
 ### 0.0.2
 
-Release CSS/SASS/SCSS Snippets
+Release Style Snippets
+
+### 0.0.3
+
+Release fix Style Snippets
+
+### 0.0.4
+
+Release fix 2.0 Style Snippets
