@@ -5,14 +5,14 @@
       ".{}"
     ],
     "body": [
-      "<${1:tagName} className={styles.${2:className}}>$3</${1/([^.]*)\\..*/$1/}>"
+      "<${1:tagName} className={styles.${2:className}}>$3</${1:tagName}>"
     ],
     "description": "Tag with module style name"
   },
   "JS arrow function": {
     "scope": "javascriptreact,typescriptreact",
     "prefix": [
-      "bw-rsaf"
+      "bw-jsaf"
     ],
     "body": [
       "import './${TM_FILENAME_BASE}.css'",
@@ -40,7 +40,7 @@
       "interface ${TM_FILENAME_BASE}Props {",
       "}",
       "",
-      "const ${TM_FILENAME_BASE} = (${1:{params}}: ${TM_FILENAME_BASE}Props) => {",
+      "const ${TM_FILENAME_BASE} = (${1:params}: ${TM_FILENAME_BASE}Props) => {",
       "\treturn(",
       "\t\t<div>",
       "\t\t\t<h1>${TM_FILENAME_BASE}</h1>",
@@ -55,7 +55,7 @@
   "JS arrow function with module styles": {
     "scope": "javascriptreact,typescriptreact",
     "prefix": [
-      "bw-rsaf-module"
+      "bw-jsaf-module"
     ],
     "body": [
       "import styles from './${TM_FILENAME_BASE}.module.css'",
@@ -83,7 +83,7 @@
       "interface ${TM_FILENAME_BASE}Props {",
       "}",
       "",
-      "const ${TM_FILENAME_BASE} = (${1:{params}}: ${TM_FILENAME_BASE}Props) => {",
+      "const ${TM_FILENAME_BASE} = (${1:params}: ${TM_FILENAME_BASE}Props) => {",
       "\treturn(",
       "\t\t<div>",
       "\t\t\t<h1>${TM_FILENAME_BASE}</h1>",
@@ -101,13 +101,23 @@
       "bw-map"
     ],
     "body": [
-      "{${1:array}.map((item, index) => {",
-      "\treturn (",
-      "\t\t<div key={index}></div>",
-      "\t);",
-      "})}",
+      "{${1:array}.map((item, index) => (",
+      "\t<div key={index}></div>",
+      "))}"
     ],
-    "description": "TS arrow function"
+    "description": "Map method"
+  },
+  "Foreach method": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": [
+      "bw-foreach"
+    ],
+    "body": [
+      "{${1:array}.forEach((item, index) => (",
+      "\t<div key={index}></div>",
+      "))}"
+    ],
+    "description": "Foreach method"
   },
   "Use state": {
     "scope": "javascriptreact,typescriptreact",
@@ -115,8 +125,30 @@
       "bw-state"
     ],
     "body": [
-      "const [$1,set$1] = useState();",
+      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialValue});"
     ],
-    "description": "TS arrow function"
+    "description": "useState"
   },
+  "Fetch request": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "bw-fetch"
+    ],
+    "body": [
+      "fetch('${1:API_URL}')",
+      "\t.then(response => {",
+      "\t\tif (!response.ok) {",
+      "\t\t\tthrow new Error('Response was not ok');",
+      "\t\t}",
+      "\t\treturn response.json();",
+      "\t})",
+      "\t.then(data => {",
+      "\t\tconsole.log('Data received:', data);",
+      "\t})",
+      "\t.catch(error => {",
+      "\t\tconsole.error('Fetch error:', error);",
+      "\t});",
+    ],
+    "description": "Default fetch request"
+  }
 }

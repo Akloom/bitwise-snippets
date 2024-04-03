@@ -1,0 +1,120 @@
+{
+  "Let variable with querySelector": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "bw-lqs"
+    ],
+    "body": [
+      "let ${1:variable} = document.querySelector('${2:selector}')"
+    ],
+    "description": "Let variable with querySelector"
+  },
+  "Let variable with querySelectorAll": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "bw-lqsa"
+    ],
+    "body": [
+      "let ${1:variable} = document.querySelectorAll('${2:selector}')"
+    ],
+    "description": "Let variable with querySelectorAll"
+  },
+  "Let variable with getElementById": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "bw-lid"
+    ],
+    "body": [
+      "let ${1:variable} = document.getElementById('${2:id}')"
+    ],
+    "description": "Let variable with getElementById"
+  },
+  "Const variable with querySelector": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "bw-cqs"
+    ],
+    "body": [
+      "const ${1:variable} = document.querySelector('${2:selector}')"
+    ],
+    "description": "Const variable with querySelector"
+  },
+  "Const variable with querySelectorAll": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "bw-cqsa"
+    ],
+    "body": [
+      "const ${1:variable} = document.querySelectorAll('${2:selector}')"
+    ],
+    "description": "Const variable with querySelectorAll"
+  },
+  "Const variable with getElementById": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "bw-cid"
+    ],
+    "body": [
+      "const ${1:variable} = document.getElementById('${2:id}')"
+    ],
+    "description": "Const variable with getElementById"
+  },
+  "Event for element": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "bw-event"
+    ],
+    "body": [
+      "${1:element}.addEventListener('${2:event}', () => {",
+      "\t$3",
+      "})"
+    ],
+    "description": "Event for element"
+  },
+  "Fetch request": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "bw-fetch"
+    ],
+    "body": [
+      "fetch('${1:API_URL}')",
+      "\t.then(response => {",
+      "\t\tif (!response.ok) {",
+      "\t\t\tthrow new Error('Response was not ok');",
+      "\t\t}",
+      "\t\treturn response.json();",
+      "\t})",
+      "\t.then(data => {",
+      "\t\tconsole.log('Data received:', data);",
+      "\t})",
+      "\t.catch(error => {",
+      "\t\tconsole.error('Fetch error:', error);",
+      "\t})"
+    ],
+    "description": "Default fetch request"
+  },
+  "Map method": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "bw-map"
+    ],
+    "body": [
+      "const ${1:result} = ${2:array}.map((item, index) => {",
+      "\treturn `<div key=${index}></div>`;",
+      "})"
+    ],
+    "description": "Map method"
+  },
+  "Foreach method": {
+    "scope": "javascript,typescript",
+    "prefix": [
+      "bw-foreach"
+    ],
+    "body": [
+      "${1:array}.forEach((item, index) => {",
+      "\t${2:array2}.push(`<li key=${index}>${item}</li>`)",
+      "})"
+    ],
+    "description": "Foreach method"
+  },
+}

@@ -1,11 +1,12 @@
 {
   "name": "bitwise-snippets",
   "displayName": "BitWise Snippets",
-  "description": "Snippets for HTML/CSS/SASS/SCSS",
+  "description": "Snippets that were made by a member of the BitWise team",
   "publisher": "Akloom",
   "license": "MIT",
   "repository": "https://github.com/Akloom/bitwise-snippets",
   "version": "0.0.7",
+  "icon": "./image/logo.png",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -29,6 +30,14 @@
       {
         "language": "sass",
         "path": "./snippets/style-snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript-snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/javascript-snippets.code-snippets"
       },
       {
         "language": "javascriptreact",
