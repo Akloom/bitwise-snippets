@@ -5,7 +5,7 @@
   "publisher": "Akloom",
   "license": "MIT",
   "repository": "https://github.com/Akloom/bitwise-snippets",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -29,6 +29,14 @@
       {
         "language": "sass",
         "path": "./snippets/style-snippets.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react-snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react-snippets.code-snippets"
       }
     ]
   }

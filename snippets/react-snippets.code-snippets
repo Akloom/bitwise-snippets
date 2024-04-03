@@ -1,0 +1,122 @@
+{
+  "Tag with module classes": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": [
+      ".{}"
+    ],
+    "body": [
+      "<${1:tagName} className={styles.${2:className}}>$3</${1/([^.]*)\\..*/$1/}>"
+    ],
+    "description": "Tag with module style name"
+  },
+  "JS arrow function": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": [
+      "bw-rsaf"
+    ],
+    "body": [
+      "import './${TM_FILENAME_BASE}.css'",
+      "",
+      "const ${TM_FILENAME_BASE} = (${1:params}) => {",
+      "\treturn(",
+      "\t\t<div>",
+      "\t\t\t<h1>${TM_FILENAME_BASE}</h1>",
+      "\t\t</div>",
+      "\t)",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "JS arrow function"
+  },
+  "TS arrow function": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": [
+      "bw-tsaf"
+    ],
+    "body": [
+      "import './${TM_FILENAME_BASE}.css'",
+      "",
+      "interface ${TM_FILENAME_BASE}Props {",
+      "}",
+      "",
+      "const ${TM_FILENAME_BASE} = (${1:{params}}: ${TM_FILENAME_BASE}Props) => {",
+      "\treturn(",
+      "\t\t<div>",
+      "\t\t\t<h1>${TM_FILENAME_BASE}</h1>",
+      "\t\t</div>",
+      "\t)",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "JS arrow function"
+  },
+  "JS arrow function with module styles": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": [
+      "bw-rsaf-module"
+    ],
+    "body": [
+      "import styles from './${TM_FILENAME_BASE}.module.css'",
+      "",
+      "const ${TM_FILENAME_BASE} = (${1:params}) => {",
+      "\treturn(",
+      "\t\t<div>",
+      "\t\t\t<h1>${TM_FILENAME_BASE}</h1>",
+      "\t\t</div>",
+      "\t)",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "JS arrow function"
+  },
+  "TS arrow function with module styles": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": [
+      "bw-tsaf-module"
+    ],
+    "body": [
+      "import styles from './${TM_FILENAME_BASE}.module.css'",
+      "",
+      "interface ${TM_FILENAME_BASE}Props {",
+      "}",
+      "",
+      "const ${TM_FILENAME_BASE} = (${1:{params}}: ${TM_FILENAME_BASE}Props) => {",
+      "\treturn(",
+      "\t\t<div>",
+      "\t\t\t<h1>${TM_FILENAME_BASE}</h1>",
+      "\t\t</div>",
+      "\t)",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "TS arrow function"
+  },
+  "Map method": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": [
+      "bw-map"
+    ],
+    "body": [
+      "{${1:array}.map((item, index) => {",
+      "\treturn (",
+      "\t\t<div key={index}></div>",
+      "\t);",
+      "})}",
+    ],
+    "description": "TS arrow function"
+  },
+  "Use state": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": [
+      "bw-state"
+    ],
+    "body": [
+      "const [$1,set$1] = useState();",
+    ],
+    "description": "TS arrow function"
+  },
+}
