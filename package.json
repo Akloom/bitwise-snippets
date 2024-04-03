@@ -5,7 +5,7 @@
   "publisher": "Akloom",
   "license": "MIT",
   "repository": "https://github.com/Akloom/bitwise-snippets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.87.0"
   },
@@ -16,7 +16,19 @@
     "snippets": [
       {
         "language": "html",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/html-snippets.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/css-and-scss-snippets.code-snippets"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/css-and-scss-snippets.code-snippets"
+      },
+      {
+        "language": "sass",
+        "path": "./snippets/sass-snippets.code-snippets"
       }
     ]
   }

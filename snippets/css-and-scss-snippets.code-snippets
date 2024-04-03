@@ -1,0 +1,96 @@
+{
+  "Flex": {
+    "scope": "css,scss",
+    "prefix": [
+      "bw-flex"
+    ],
+    "body": [
+      "display: flex;",
+      "align-items: $1;",
+      "justify-content: ;",
+      "flex-direction: ;",
+      "gap: ;",
+    ],
+    "description": "Flex params"
+  },
+  "Grid": {
+    "scope": "css,scss",
+    "prefix": [
+      "bw-grid"
+    ],
+    "body": [
+      "display: grid;",
+      "grid-template-columns: $1;",
+      "grid-template-rows: ;",
+      "gap: ;",
+    ],
+    "description": "Grid params"
+  },
+  "Font": {
+    "scope": "css,scss",
+    "prefix": [
+      "bw-font"
+    ],
+    "body": [
+      "font-size: $1;",
+      "font-weight: ;",
+      "font-style: ;",
+      "line-height: ;",
+      "color: ;",
+    ],
+    "description": "Font params"
+  },
+  "Background image": {
+    "scope": "css,scss",
+    "prefix": [
+      "bw-bg-image"
+    ],
+    "body": [
+      "background-image: $1;",
+      "background-size: ;",
+      "background-repeat: ;",
+      "background-position: ;",
+    ],
+    "description": "Background image params"
+  },
+  "Border": {
+    "scope": "css,scss",
+    "prefix": [
+      "bw-border"
+    ],
+    "body": [
+      "border-width: $1;",
+      "border-style: ;",
+      "border-color: ;",
+    ],
+    "description": "Border params"
+  },
+  "Button": {
+    "scope": "css,scss",
+    "prefix": [
+      "bw-button"
+    ],
+    "body": [
+      "cursor: pointer;",
+      "padding: $1;",
+      "border: ;",
+      "border-radius: ;",
+      "background: ;",
+      "font-size: ;",
+      "font-weight: ;",
+      "color: ;",
+    ],
+    "description": "CSS button"
+  },
+  "Media screen": {
+    "scope": "css,scss",
+    "prefix": [
+      "bw-media"
+    ],
+    "body": [
+      "@media screen and (max-width: $1) {",
+      "}",
+    ],
+    "description": "CSS button"
+  },
+}

@@ -1,0 +1,87 @@
+{
+  "Default layout": {
+    "scope": "html",
+    "prefix": [
+      "bw-layout"
+    ],
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang='en'>\n",
+      "<head>",
+      "\t<meta charset='UTF-8'>",
+      "\t<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+      "\t<link rel='stylesheet' href='style.css' />",
+      "\t<title>$1</title>",
+      "</head>\n",
+      "<body>",
+      "\t<header class='header'>$2</header>",
+      "\t<main class='wrapper'></main>",
+      "\t<footer class='footer'></footer>\n",
+      "<script src='main.js'></script>",
+      "</body>",
+      "</html>"
+    ],
+    "description": "Default layout"
+  },
+  "Header content": {
+    "scope": "html",
+    "prefix": [
+      "bw-header"
+    ],
+    "body": [
+      "<div class='header__content'>",
+      "\t<a class='header__logo'>",
+      "\t\t<img src='$1' alt='' />",
+      "\t</a>",
+      "\t<div class='hamburger__menu'>",
+      "\t\t<span></span>",
+      "\t</div>",
+      "\t<div class='header__collapse'>",
+      "\t\t<nav class='nav'>",
+      "\t\t</nav>",
+      "\t</div>",
+      "</div>"
+    ],
+    "description": "HTML header content"
+  },
+  "List": {
+    "scope": "html",
+    "prefix": [
+      "bw-list"
+    ],
+    "body": [
+      "<ul class='$1'>",
+      "\t<li class='$2'></li>",
+      "</ul>"
+    ],
+    "description": "HTML list"
+  },
+  "Section": {
+    "scope": "html",
+    "prefix": [
+      "bw-section"
+    ],
+    "body": [
+      "<section class='section'>",
+      "\t<h1 class='section__heading'></h1>",
+      "\t<p class='section__content'></p>",
+      "</section>"
+    ],
+    "description": "HTML section"
+  },
+  "Picture": {
+    "scope": "html",
+    "prefix": [
+      "bw-picture"
+    ],
+    "body": [
+      "<picture>",
+      "\t<source srcset='$1' media='(min-width: 1280px)' class='$2'>",
+      "\t<source srcset='$1' media='(min-width: 1000px)' class='$3'>",
+      "\t<source srcset='$1' media='(min-width: 768px)' class='$4'>",
+      "\t<img src='$1' alt='' class='$5'>",
+      "</picture>"
+    ],
+    "description": "HTML picture"
+  },
+}
